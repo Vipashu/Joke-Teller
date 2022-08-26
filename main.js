@@ -6,7 +6,7 @@ get_joke.addEventListener('click', generateJoke);
 generateJoke();
 
 async function generateJoke() {
-	const jokeRes = await fetch('https://icanhazdadjoke.com/', {
+	const jokeRes = await fetch('https://v2.jokeapi.dev/joke/Programming,Dark?type=single', {
 		headers: {
 			'Accept': 'application/json'
 		}
