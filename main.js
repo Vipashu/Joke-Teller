@@ -6,7 +6,7 @@ get_joke.addEventListener('click', generateJoke);
 generateJoke();
 
 async function generateJoke() {
-	const jokeRes = await fetch('https://v2.jokeapi.dev/joke/Dark?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single', {
+	const jokeRes = await fetch('https://v2.jokeapi.dev/joke/Any', {
 		headers: {
 			'Accept': 'application/json'
 		}
